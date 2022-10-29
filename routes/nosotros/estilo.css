@@ -14,12 +14,18 @@ html {
 /* seccion I N I C I O */
 /* *********************/
 
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 #inicio {
-  background: linear-gradient(rgba(209, 11, 11, 0.7), rgba(0, 0, 0, 0.7)),
-    url("../../img/seguridad.jpeg");
+  background: #fff;
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 100%;
 }
 
 #inicio .contenido header {
@@ -81,52 +87,48 @@ html {
   color: #ff2323;
 }
 /* *********************/
-/* seccion F O T O S */
+/* seccion C O N T E N I D O */
 /* *********************/
 
-#inicio .contenido .container {
-  width: 100%;
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-#inicio .contenido .container img {
-  width: 100%;
-  object-fit: cover;
-}
-/* *********************/
-/* seccion S E R V I C I O S */
-/* *********************/
-
-#servicios {
-  max-width: 100%;
+#texto {
+  max-width: 1200px;
   margin: auto;
-  padding: 50px 15px;
+  padding-top: 23vh;
+  padding-bottom: 10vh;
   display: flex;
 }
 
-#servicios .contenedor-foto {
-  max-width: 100%;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-radius: 20px;
-  transition: 0.5s;
+#texto .contenido {
+  margin: 0 40px;
 }
 
-#servicios .contenedor-foto:hover {
-  box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
+#texto .contenido .line {
+  text-align: center;
 }
 
-#servicios .contenedor-foto img {
-  padding: 10px;
-  width: 31vw;
-  border-radius: 20px;
-  background-color: #f3f3f3;
-  cursor: pointer;
+#texto .contenido .line .divider {
+  height: 2px;
+  width: 100%;
+  display: inline-block;
+  background-color: #ff2323;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px #565656;
+}
+
+#texto .contenido h2 {
+  font-size: 34px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #ff2323;
+}
+
+#texto .contenido p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #000000;
 }
 /* *********************/
 /* seccion F O O T E R */
@@ -140,6 +142,7 @@ footer {
   height: 100%;
   color: #fff;
   padding-top: 30px;
+  margin-top: auto;
 }
 
 footer .contenido-footer {
@@ -278,26 +281,16 @@ footer .derechos .contenedor p {
   #icono-nav {
     display: block;
   }
-  #inicio {
-    height: 45vh;
+  /* seccion CONTENIDO */
+  #texto {
+    padding-top: 30%;
+    padding-bottom: 5vh;
   }
-  #inicio .contenido .container {
-    height: 75vh;
+  #texto .contenido {
+    margin: 0 30px;
   }
-  /* seccion SERVICIOS */
-  #servicios {
-    margin-top: -30px;
-    margin-bottom: -30px;
-    display: block;
-    max-width: 100%;
-  }
-  #servicios .contenedor-foto {
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-  #servicios .contenedor-foto img {
-    padding: 8px;
-    width: 100%;
+  #texto .contenido h2 {
+    font-size: 25px;
   }
   /* seccion FOOTER */
   footer .contenido-footer {

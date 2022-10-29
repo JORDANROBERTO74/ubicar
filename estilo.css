@@ -14,6 +14,13 @@ html {
 /* seccion I N I C I O */
 /* *********************/
 
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 #inicio {
   background: linear-gradient(rgba(209, 11, 11, 0.7), rgba(0, 0, 0, 0.7)),
     url("img/seguridad.jpeg");
@@ -134,12 +141,13 @@ html {
 
 footer {
   background: linear-gradient(rgba(209, 11, 11, 0.7), rgba(0, 0, 0, 0.7)),
-    url("img/seguridad.jpeg");
+    url("../../img/seguridad.jpeg");
   background-size: cover;
   background-position: center;
   height: 100%;
   color: #fff;
   padding-top: 30px;
+  margin-top: auto;
 }
 
 footer .contenido-footer {
