@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 user-scalable=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="estilo.css" />
+    <link rel="stylesheet" href="../../splide-4.1.3/dist/css/splide.min.css" />
+    <script src="../../splide-4.1.3/dist/js/splide.min.js"></script>
+    <title>UBICAR - Bolivia</title>
+  </head>
+
+  <body>
+    <!-- SECCION I N I C I O -->
+    <section id="inicio">
+      <div class="contenido">
+        <header>
+          <div class="contenido-header">
+            <a class="contenido-logo" href="#inicio">
+              <img
+                class="logo"
+                height="50px"
+                src="../../img/logo-ubicar1.png"
+                alt="logo"
+              />
+            </a>
+            <nav id="nav" class="">
+              <ul id="links">
+                <li>
+                  <a href="../../index.html" onclick="seleccionar(this)"
+                    >INICIO</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="../nosotros/index.html"
+                    class="seleccionado"
+                    onclick="seleccionar(this)"
+                    >NOSOTROS</a
+                  >
+                </li>
+                <li>
+                  <a href="../servicios/index.html" onclick="seleccionar(this)"
+                    >SERVICIOS</a
+                  >
+                </li>
+                <li>
+                  <a href="../productos/index.html" onclick="seleccionar(this)"
+                    >PRODUCTOS</a
+                  >
+                </li>
+                <li>
+                  <a href="../sucursales/index.html" onclick="seleccionar(this)"
+                    >SUCURSALES</a
+                  >
+                </li>
+                <li>
+                  <a href="../contacto/index.html" onclick="seleccionar(this)"
+                    >CONTACTO</a
+                  >
+                </li>
+              </ul>
+            </nav>
+
+            <!-- Icono del menu responsive -->
+            <div id="icono-nav" onclick="responsiveMenu()">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="slogan">
+              <h1>UBICAR ® ya cuida su Vehículo !!!</h1>
+              <h1>Ahora protege su casa, comercio e industria.</h1>
+            </div>
+          </div>
+        </header>
+
+        <!-- Carrusel infinito de fotos -->
+        <div class="container">
+          <section class="splide" aria-label="Basic Structure Example">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <img width="100%" src="../../img/1.jpg" alt="imagen1" />
+                </li>
+                <li class="splide__slide">
+                  <img width="100%" src="../../img/2.jpg" alt="imagen2" />
+                </li>
+                <li class="splide__slide">
+                  <img width="100%" src="../../img/3.jpg" alt="imagen3" />
+                </li>
+                <li class="splide__slide">
+                  <img width="100%" src="../../img/4.jpg" alt="imagen4" />
+                </li>
+                <li class="splide__slide">
+                  <img width="100%" src="../../img/5.jpg" alt="imagen5" />
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+
+        <script>
+          var splide = new Splide(".splide", {
+            type: "loop",
+            autoplay: true,
+            interval: "5000",
+          });
+          splide.mount();
+        </script>
+      </div>
+    </section>
+
+    <!-- SECCION S E R V I C I O S -->
+    <section id="servicios">
+      <div class="contenedor-foto">
+        <img src="../../img/rastreo-satelital.jpg" alt="rastreo-satelital" />
+      </div>
+      <div class="contenedor-foto">
+        <img
+          src="../../img/seguimiento-logistico.jpg"
+          alt="seguimiento-logistico"
+        />
+      </div>
+      <div class="contenedor-foto">
+        <img
+          src="../../img/monitoreo-de-propiedades.jpg"
+          alt="monitoreo-de-propiedades"
+        />
+      </div>
+    </section>
+
+    <!-- SECCION FOOTER -->
+    <footer>
+      <div class="contenido-footer">
+        <img
+          class="logo"
+          height="110px"
+          src="../../img/logo-ubicar.png"
+          alt="logo"
+        />
+        <div class="sucursales">
+          <div class="santacruz">
+            <div class="titulo">
+              <h3>CENTRAL</h3>
+              <h3>SANTA CRUZ</h3>
+            </div>
+            <div class="direccion">
+              <h3>Av. Japón 3er. anillo externo casi canal Cotoca Nº 3855</h3>
+              <h3>Tel/Fax 347-5460</h3>
+            </div>
+          </div>
+          <div class="cochabamba">
+            <div class="titulo">
+              <h3>REGIONAL</h3>
+              <h3>COCHABAMBA</h3>
+            </div>
+            <div class="direccion">
+              <h3>
+                Av. Juan de la Rosa Nº 0749 entre Jorge Washington y Av. Jaime
+                Mendoza Frente colegio Maryknoll.
+              </h3>
+              <h3>Teléfonos: 4545064 - 4541666</h3>
+            </div>
+          </div>
+          <div class="lapaz">
+            <div class="titulo">
+              <h3>REGIONAL</h3>
+              <h3>LA PAZ</h3>
+            </div>
+            <div class="direccion">
+              <h3>
+                Av. Jaimes Freyre No. 2957 Esquina Muñoz Cornejo Edificio
+                Esprella, Piso 1 A - Sopocachi
+              </h3>
+              <h3>Teléfonos: 2910606 - Fax: 2420003</h3>
+            </div>
+          </div>
+          <div class="tarija">
+            <div class="titulo">
+              <h3>DEALER</h3>
+              <h3>TARIJA</h3>
+            </div>
+            <div class="direccion">
+              <h3>Calle Suipacha entre 15 de abril y Madrid Nº 555</h3>
+              <h3>Cel.: 72986375</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="derechos">
+        <div class="contenedor">
+          <p>© Todos los Derechos Reservados UBICAR ®</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
