@@ -125,6 +125,34 @@ body {
 }
 
 #texto .contenido p {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  margin: 5px 0;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #000000;
+}
+#texto .contenido p label {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 25px;
+  color: #000000;
+}
+#texto .contenido .servicio {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 25px;
+  color: #000000;
+  text-decoration: underline;
+}
+#texto .contenido ul {
+  text-align: justify;
+  margin-left: 30px;
+}
+#texto .contenido ul li {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
   font-size: 15px;
   font-weight: 400;
   line-height: 25px;

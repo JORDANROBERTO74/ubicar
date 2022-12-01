@@ -124,11 +124,105 @@ body {
   color: #ff2323;
 }
 
-#texto .contenido p {
+#texto .contenido .sucursales .santacruz {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-bottom: 20px;
+}
+
+#texto .contenido .sucursales .santacruz .text {
+  display: flex;
+  flex-direction: column;
+}
+
+#texto .contenido .sucursales .santacruz label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #ff2323;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
+  margin-right: 10px;
+}
+
+#texto .contenido .sucursales .santacruz p {
+  margin: 10px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: right;
   font-size: 15px;
   font-weight: 400;
   line-height: 25px;
   color: #000000;
+  width: 250px;
+  margin-right: 10px;
+}
+
+#texto .contenido .sucursales .lapaz {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  padding-bottom: 20px;
+}
+
+#texto .contenido .sucursales .lapaz label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #ff2323;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+#texto .contenido .sucursales .lapaz p {
+  margin: 10px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #000000;
+  width: 250px;
+  margin-left: 10px;
+}
+
+#texto .contenido .sucursales .cochabamba {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+#texto .contenido .sucursales .cochabamba label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #ff2323;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+#texto .contenido .sucursales .cochabamba p {
+  margin: 10px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: right;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #000000;
+  width: 250px;
+  margin-right: 10px;
+}
+
+#texto .contenido .sucursales img {
+  width: 50vw;
 }
 /* *********************/
 /* seccion F O O T E R */
@@ -342,9 +436,131 @@ footer .derechos .contenedor p {
     justify-content: center;
   }
 
-  footer .derechos .contenedor p {
+  #texto .contenido .sucursales {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #texto .contenido .sucursales .santacruz {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
     text-align: center;
-    margin-top: 9px;
-    font-size: 13px;
+    padding-bottom: 20px;
+  }
+
+  #texto .contenido .sucursales .santacruz .text .parrafo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  #texto .contenido .sucursales .santacruz label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #ff2323;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  #texto .contenido .sucursales .santacruz p {
+    margin: 10px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #000000;
+    width: 200px;
+    margin-right: 0px;
+  }
+
+  #texto .contenido .sucursales .lapaz {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  #texto .contenido .sucursales .lapaz .text .parrafo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  #texto .contenido .sucursales .lapaz label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #ff2323;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  #texto .contenido .sucursales .lapaz p {
+    margin: 10px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #000000;
+    width: 200px;
+    margin-left: 0px;
+  }
+
+  #texto .contenido .sucursales .cochabamba {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  #texto .contenido .sucursales .cochabamba .text .parrafo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  #texto .contenido .sucursales .cochabamba label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #ff2323;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  #texto .contenido .sucursales .cochabamba p {
+    margin: 10px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #000000;
+    width: 200px;
+    margin-right: 0px;
+  }
+
+  #texto .contenido .sucursales img {
+    width: 80vw;
   }
 }

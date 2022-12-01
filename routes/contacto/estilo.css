@@ -124,11 +124,108 @@ body {
   color: #ff2323;
 }
 
-#texto .contenido p {
+#contacto {
+  padding: 0 15px;
+}
+
+#contacto h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  font-size: 10px;
+  margin-top: -10px;
+  color: #ffffff;
+}
+
+#contacto .ubicar {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+#contacto label {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #ff2323;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+  margin-right: 10px;
+}
+
+#contacto p {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
   font-size: 15px;
   font-weight: 400;
   line-height: 25px;
   color: #000000;
+}
+
+#contacto p a {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #ff2323;
+}
+
+#contacto .contenedor-form {
+  max-width: 1100px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+#contacto .contenedor-form .fila {
+  margin-bottom: 15px;
+}
+
+#contacto .contenedor-form .mitad {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#contacto .contenedor-form input,
+#contacto .contenedor-form textarea {
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid #919191;
+  outline: none;
+}
+#contacto .btn-enviar:hover {
+  background-color: #ff5080;
+  color: #fff;
+}
+#contacto .contenedor-form input:focus,
+#contacto .contenedor-form textarea:focus {
+  border: 1px solid #ff2323;
+}
+
+#contacto .contenedor-form .mitad input {
+  width: 48%;
+}
+
+#contacto .contenedor-form .input-full {
+  width: 100%;
+}
+
+#contacto .btn-enviar {
+  display: block;
+  margin: auto;
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 10px 15px !important;
+  background-color: #ff2323;
+  color: #fff;
+  border: none;
+}
+
+#contacto .btn-enviar:hover {
+  background-color: #8d0000;
 }
 /* *********************/
 /* seccion F O O T E R */
@@ -346,5 +443,28 @@ footer .derechos .contenedor p {
     text-align: center;
     margin-top: 9px;
     font-size: 13px;
+  }
+
+  #contacto .ubicar {
+    display: flex;
+    flex-direction: column;
+    margin-top: -40px;
+  }
+
+  #contacto label {
+    margin-right: 0px;
+  }
+
+  #contacto .contenedor-form .mitad {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #contacto .contenedor-form .mitad input {
+    width: 100%;
+  }
+
+  #contacto .contenedor-form .mitad .input1 {
+    padding-bottom: 15px;
   }
 }

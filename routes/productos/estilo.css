@@ -130,6 +130,53 @@ body {
   line-height: 25px;
   color: #000000;
 }
+
+#texto .contenido p {
+  margin: 10px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #000000;
+}
+
+#texto .contenido label {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #ff2323;
+}
+
+#texto .contenido h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  font-size: 10px;
+  margin-top: -10px;
+  color: #ffffff;
+}
+
+#texto .contenido .containerPiezas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+#texto .contenido ul {
+  text-align: justify;
+  margin-left: 30px;
+}
+#texto .contenido ul li {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #000000;
+}
 /* *********************/
 /* seccion F O O T E R */
 /* *********************/
@@ -346,5 +393,17 @@ footer .derechos .contenedor p {
     text-align: center;
     margin-top: 9px;
     font-size: 13px;
+  }
+
+  #texto .contenido .containerPiezas {
+    flex-direction: column;
+  }
+
+  #texto .contenido .containerPiezas .column2 {
+    margin-left: 0px;
+  }
+
+  #texto .contenido h4 {
+    display: none;
   }
 }
