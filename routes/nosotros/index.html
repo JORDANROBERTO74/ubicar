@@ -2,182 +2,189 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0b0d" />
     <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0 user-scalable=no"
+      name="description"
+      content="UBICAR ® opera en Bolivia desde 2002 como Red Internacional de Seguridad, con soluciones de localización, protección y monitoreo electrónico."
     />
+    <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+    <title>Nosotros — UBICAR ®</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="estilo.css" />
-    <link rel="stylesheet" href="../../splide-4.1.3/dist/css/splide.min.css" />
-    <script src="../../splide-4.1.3/dist/js/splide.min.js"></script>
-    <title>UBICAR - Bolivia</title>
+    <link rel="stylesheet" href="../../styles.css" />
   </head>
 
   <body>
-    <!-- SECCION I N I C I O -->
-    <section id="inicio">
-      <div class="contenido">
-        <header>
-          <div class="contenido-header">
-            <a class="contenido-logo" href="../../index.html">
-              <img
-                class="logo"
-                height="50px"
-                src="../../img/logo-ubicar1.png"
-                alt="logo"
-              />
-            </a>
-            <nav id="nav" class="">
-              <ul id="links">
-                <li>
-                  <a href="../../index.html" onclick="seleccionar(this)"
-                    >INICIO</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="../nosotros/index.html"
-                    class="seleccionado"
-                    onclick="seleccionar(this)"
-                    >NOSOTROS</a
-                  >
-                </li>
-                <li>
-                  <a href="../servicios/index.html" onclick="seleccionar(this)"
-                    >SERVICIOS</a
-                  >
-                </li>
-                <li>
-                  <a href="../productos/index.html" onclick="seleccionar(this)"
-                    >PRODUCTOS</a
-                  >
-                </li>
-                <li>
-                  <a href="../sucursales/index.html" onclick="seleccionar(this)"
-                    >SUCURSALES</a
-                  >
-                </li>
-                <li>
-                  <a href="../contacto/index.html" onclick="seleccionar(this)"
-                    >CONTACTO</a
-                  >
-                </li>
-              </ul>
-            </nav>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-            <!-- Icono del menu responsive -->
-            <div id="icono-nav" onclick="responsiveMenu()">
-              <i class="fa-solid fa-bars"></i>
-            </div>
-
-            <div class="slogan">
-              <h1>UBICAR ® ya cuida su Vehículo !!!</h1>
-              <h1>Ahora protege su casa, comercio e industria.</h1>
-            </div>
-          </div>
-        </header>
-      </div>
-    </section>
-
-    <!-- SECCION C O N T E N I D O -->
-    <section id="texto">
-      <div class="contenido">
-        <h2>Nuestra Empresa</h2>
-        <div class="line">
-          <span class="divider"></span>
-        </div>
-        <p>
-          <label>UBICAR ® </label>es la única Red Internacional de Seguridad con
-          cobertura en toda Latinoamérica, que provee soluciones y servicios de
-          localización, protección y monitoreo electrónico de vehículos,
-          personas y propiedades.
-        </p>
-        <p>
-          <label>UBICAR ® </label> opera en el mercado boliviano desde el año
-          2002, atendiendo de manera eficiente a nuestros clientes y usuarios.
-        </p>
-        <p>
-          <label>UBICAR ® </label> utiliza una amplia gama de dispositivos
-          electrónicos de control, posibilitando satisfacer las necesidades
-          específicas de sus clientes corporativos y particulares.
-        </p>
-      </div>
-    </section>
-
-    <!-- SECCION FOOTER -->
-    <footer>
-      <div class="contenido-footer">
-        <a href="../../index.html">
-          <img
-            class="logo"
-            height="110px"
-            src="../../img/logo-ubicar.png"
-            alt="logo"
-          />
+    <header class="site-header" id="site-header">
+      <div class="container header__inner">
+        <a class="brand" href="../../index.html" aria-label="UBICAR, inicio">
+          <img class="brand__logo" src="../../img/logo-ubicar1.png" alt="UBICAR" width="80" height="34" />
         </a>
-        <div class="sucursales">
-          <div class="santacruz">
-            <div class="titulo">
-              <h3>CENTRAL</h3>
-              <h3>SANTA CRUZ</h3>
-            </div>
-            <div class="direccion">
-              <h3>Av. Japón 3er. anillo externo casi canal Cotoca Nº 3855</h3>
-              <h3>Tel/Fax 347-5460</h3>
-            </div>
+
+        <nav class="nav" id="primary-nav" aria-label="Navegación principal">
+          <ul class="nav__list">
+            <li><a class="nav__link" href="../../index.html">Inicio</a></li>
+            <li><a class="nav__link" href="../nosotros/index.html" aria-current="page">Nosotros</a></li>
+            <li><a class="nav__link" href="../servicios/index.html">Servicios</a></li>
+            <li><a class="nav__link" href="../productos/index.html">Productos</a></li>
+            <li><a class="nav__link" href="../sucursales/index.html">Sucursales</a></li>
+            <li><a class="nav__link" href="../contacto/index.html">Contacto</a></li>
+            <li>
+              <a class="btn btn--primary btn--sm header__cta" href="../contacto/index.html">Cotizar</a>
+            </li>
+          </ul>
+        </nav>
+
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+          aria-label="Abrir menú de navegación"
+        >
+          <span class="nav-toggle__bars" aria-hidden="true"></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <section class="page-hero" aria-labelledby="page-title">
+        <div class="container">
+          <p class="eyebrow">Nosotros</p>
+          <h1 class="page-hero__title" id="page-title">Nuestra empresa</h1>
+          <p class="page-lead">
+            Una Red Internacional de Seguridad que protege vehículos, personas y
+            propiedades en toda Latinoamérica.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="prose reveal">
+            <p>
+              <strong>UBICAR ®</strong> es la única Red Internacional de Seguridad con
+              cobertura en toda Latinoamérica, que provee soluciones y servicios de
+              localización, protección y monitoreo electrónico de vehículos, personas y
+              propiedades.
+            </p>
+            <p>
+              <strong>UBICAR ®</strong> opera en el mercado boliviano desde el año
+              <strong>2002</strong>, atendiendo de manera eficiente a nuestros clientes y
+              usuarios, con una amplia trayectoria en seguridad electrónica.
+            </p>
+            <p>
+              <strong>UBICAR ®</strong> utiliza una amplia gama de dispositivos
+              electrónicos de control, posibilitando satisfacer las necesidades específicas
+              de sus clientes corporativos y particulares.
+            </p>
           </div>
-          <div class="cochabamba">
-            <div class="titulo">
-              <h3>REGIONAL</h3>
-              <h3>COCHABAMBA</h3>
+
+          <div class="stats reveal">
+            <div class="stat-card">
+              <span class="stat-card__value">2002</span>
+              <span class="stat-card__label">Inicio en Bolivia</span>
             </div>
-            <div class="direccion">
-              <h3>
-                Av. Juan de la Rosa Nº 0749 entre Jorge Washington y Av. Jaime
-                Mendoza Frente colegio Maryknoll.
-              </h3>
-              <h3>Teléfonos: 4545064 - 4541666</h3>
+            <div class="stat-card">
+              <span class="stat-card__value">25+</span>
+              <span class="stat-card__label">Años de experiencia</span>
             </div>
-          </div>
-          <div class="lapaz">
-            <div class="titulo">
-              <h3>REGIONAL</h3>
-              <h3>LA PAZ</h3>
+            <div class="stat-card">
+              <span class="stat-card__value">4</span>
+              <span class="stat-card__label">Sucursales</span>
             </div>
-            <div class="direccion">
-              <h3>
-                Av. Jaimes Freyre No. 2957 Esquina Muñoz Cornejo Edificio
-                Esprella, Piso 1 A - Sopocachi
-              </h3>
-              <h3>Teléfonos: 2910606 - Fax: 2420003</h3>
-            </div>
-          </div>
-          <div class="tarija">
-            <div class="titulo">
-              <h3>DEALER</h3>
-              <h3>TARIJA</h3>
-            </div>
-            <div class="direccion">
-              <h3>Calle Suipacha entre 15 de abril y Madrid Nº 555</h3>
-              <h3>Cel.: 72986375</h3>
+            <div class="stat-card">
+              <span class="stat-card__value">LATAM</span>
+              <span class="stat-card__label">Cobertura</span>
             </div>
           </div>
         </div>
-      </div>
-      <div class="derechos">
-        <div class="contenedor">
-          <p>© Todos los Derechos Reservados UBICAR ®</p>
+      </section>
+
+      <section class="section section--paper">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Nuestro compromiso</p>
+            <h2 class="section-title">Seguridad integral, atención personalizada</h2>
+          </div>
+          <div class="prose reveal">
+            <p>
+              Combinamos tecnología GPS/GSM con monitoreo permanente y respuesta física con
+              personal propio. Nuestro equipo acompaña a cada cliente en la instalación, el
+              uso diario del servicio y la atención de cualquier evento.
+            </p>
+            <ul>
+              <li>Monitoreo las 24 horas, los 365 días del año.</li>
+              <li>Provisión de equipos con instalación sin costo.</li>
+              <li>Cámaras de obsequio por pagos adelantados.</li>
+              <li>Descuentos según la modalidad de pago y costo único del servicio.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <a class="brand" href="../../index.html" aria-label="UBICAR, inicio">
+              <span class="brand__pill"><img class="brand__logo" src="../../img/logo-ubicar1.png" alt="UBICAR" width="90" height="40" /></span>
+            </a>
+            <p>
+              Red Internacional de Seguridad con cobertura en toda Latinoamérica. Rastreo,
+              monitoreo y protección desde 2002.
+            </p>
+          </div>
+
+          <div>
+            <p class="footer__col-title">Navegación</p>
+            <nav class="footer__nav" aria-label="Navegación del pie">
+              <a href="../../index.html">Inicio</a>
+              <a href="../nosotros/index.html">Nosotros</a>
+              <a href="../servicios/index.html">Servicios</a>
+              <a href="../productos/index.html">Productos</a>
+              <a href="../sucursales/index.html">Sucursales</a>
+              <a href="../contacto/index.html">Contacto</a>
+            </nav>
+          </div>
+
+          <div>
+            <p class="footer__col-title">Sucursales</p>
+            <nav class="footer__nav" aria-label="Sucursales">
+              <a href="../sucursales/index.html">Santa Cruz (central)</a>
+              <a href="../sucursales/index.html">Cochabamba</a>
+              <a href="../sucursales/index.html">La Paz</a>
+              <a href="../sucursales/index.html">Tarija</a>
+            </nav>
+          </div>
+
+          <div>
+            <p class="footer__col-title">Contacto</p>
+            <nav class="footer__nav" aria-label="Datos de contacto">
+              <a href="mailto:info@ubicar.com.bo">info@ubicar.com.bo</a>
+              <a href="tel:+59133475460">Tel/Fax 347-5460</a>
+              <a href="../contacto/index.html">Formulario de contacto</a>
+            </nav>
+          </div>
+        </div>
+
+        <div class="footer__legal">
+          <span>© Todos los derechos reservados UBICAR ®</span>
+          <span>Red Internacional de Seguridad · Bolivia</span>
         </div>
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="../../main.js" defer></script>
   </body>
 </html>
