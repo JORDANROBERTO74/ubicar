@@ -1,65 +1,59 @@
-#### English version
+# UBICAR ® — Red Internacional de Seguridad
 
-<div align="center"><strong>UBICAR - Landing Page</strong></div>
-<div align="center">Built with HTML - CSS - JavaScript</div>
-<br />
+Corporate website for **UBICAR ®**, a security company operating in Bolivia since 2002: satellite tracking, UBITRACK logistics, property monitoring and asset marking. Built with **vanilla HTML, CSS and JavaScript** — no frameworks, no build step, no UI libraries.
 
-## Description
+## Highlights
 
-Ubicar is a personal project developed as part of my portfolio. It is a modern and responsive landing page designed to showcase my front-end development skills using only HTML, CSS, and JavaScript—without any frameworks or libraries.
+- **Long B2B landing + 5 detail pages** (Nosotros, Servicios, Productos, Sucursales, Contacto).
+- **Modern design system**: brand palette (black + red `#D10B0B`), typography Manrope + Inter, fluid scale with `clamp()`.
+- **Real content**: services, product list, 4 branches (Santa Cruz, Cochabamba, La Paz, Tarija) and official certifications (ATT, Policía Boliviana, Aduana Nacional).
+- **Responsive** from 320px to 1440px.
+- **Accessible (WCAG 2.1 AA)**: skip link, landmarks, visible focus, labeled form, `prefers-reduced-motion`.
+- **SEO**: meta description, Open Graph, JSON-LD `Organization` with the 4 locations, favicon.
+- **Performance**: WebP images, lazy loading.
 
-## Technologies Used
+## Stack
 
-- Markup - [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML)
-- Styling - [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
-- Scripting - [Javascript (vanilla)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- HTML5
+- CSS3 (custom properties, Grid, `clamp()`)
+- Vanilla JS (accessible nav, scroll reveal, form validation)
 
-## Project Purpose
+## Structure
 
-This project was built for learning and showcasing purposes. It demonstrates how a clean, professional-looking landing page can be built with core web technologies, focusing on performance, layout, and interactivity without relying on third-party tools.
+```
+index.html                 # landing
+styles.css                 # shared design system
+main.js                    # shared interactions
+favicon.svg
+.nojekyll
+routes/
+  nosotros/index.html
+  servicios/index.html
+  productos/index.html
+  sucursales/index.html
+  contacto/index.html
+img/                       # webp (used) + originals
+```
 
-## Live Preview
+## Run locally
 
-You can see the project in action on [Github Pages](https://jordanroberto74.github.io/ubicar/).
+Open `index.html` directly, or serve the folder:
+
+```bash
+python -m http.server 8080
+```
+
+Then visit <http://localhost:8080>.
+
+## Live preview
+
+<https://jordanroberto74.github.io/ubicar/>
+
+## Notes
+
+- The quote/contact form is **front-end only**: it validates fields and shows a success state; no backend.
+- Content is the company's real information (services, branches, certifications).
 
 ## Contact
 
-If you would like to learn more about my work or collaborate on future projects, feel free to contact me at jordanroberto74@gmail.com.
-
-Thank you for visiting UBICAR!
-
-<br />
-
----
-
-<br />
-
-#### Versión en español
-
-<div align="center"><strong>UBICAR - Página de aterrizaje</strong></div>
-<div align="center">Construida con HTML - CSS - JavaScript</div>
-<br />
-
-## Descripción
-
-Ubicar es un proyecto personal desarrollado como parte de mi portafolio. Es una landing page moderna y responsiva diseñada para demostrar mis habilidades en desarrollo front-end utilizando únicamente HTML, CSS y JavaScript, sin frameworks ni bibliotecas externas.
-
-## Tecnologías Utilizadas
-
-- Marcado - [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML)
-- Estilos - [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
-- Scripting - [Javascript (vanilla)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-
-## Propósito del Proyecto
-
-Este proyecto fue creado con fines de aprendizaje y demostración. Muestra cómo se puede construir una landing page limpia y profesional utilizando solo tecnologías web fundamentales, con énfasis en el rendimiento, diseño e interactividad sin depender de herramientas de terceros.
-
-## Vista Previa
-
-Puedes ver el proyecto en funcionamiento en [Github Pages](https://jordanroberto74.github.io/ubicar/).
-
-## Contacto
-
-Si deseas conocer más sobre mi trabajo o colaborar en futuros proyectos, puedes contactarme en jordanroberto74@gmail.com.
-
-¡Gracias por visitar UBICAR!
+<info@ubicar.com.bo>
