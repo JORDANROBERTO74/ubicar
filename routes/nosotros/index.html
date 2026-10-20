@@ -3,18 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#0b0b0d" />
+    <meta name="theme-color" content="#0a0a0b" />
     <meta
       name="description"
       content="UBICAR ® opera en Bolivia desde 2002 como Red Internacional de Seguridad, con soluciones de localización, protección y monitoreo electrónico."
     />
     <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="../../favicon.ico" sizes="any" />
     <title>Nosotros — UBICAR ®</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../../styles.css" />
@@ -24,9 +25,29 @@
     <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
     <header class="site-header" id="site-header">
+      <div class="utility-bar">
+        <div class="container utility-bar__inner">
+          <p class="utility-bar__tag">Red Internacional de Seguridad · Desde 2002</p>
+          <div class="utility-bar__contact">
+            <a href="tel:+59133475460">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2z"/></svg>
+              Central 347-5460
+            </a>
+            <a href="https://wa.me/59177319046" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.1-5.5A8.5 8.5 0 1 1 21 11.5z"/><path d="M8.5 8.8c.4 2.7 2.2 4.5 4.9 4.9"/></svg>
+              WhatsApp 77319046
+            </a>
+            <a href="mailto:info@ubicar.com.bo">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              info@ubicar.com.bo
+            </a>
+          </div>
+        </div>
+      </div>
+
       <div class="container header__inner">
         <a class="brand" href="../../index.html" aria-label="UBICAR, inicio">
-          <img class="brand__logo" src="../../img/logo-ubicar1.png" alt="UBICAR" width="80" height="34" />
+          <img class="brand__logo" src="../../img/logo-ubicar.png" alt="UBICAR" width="88" height="39" />
         </a>
 
         <nav class="nav" id="primary-nav" aria-label="Navegación principal">
@@ -37,11 +58,20 @@
             <li><a class="nav__link" href="../productos/index.html">Productos</a></li>
             <li><a class="nav__link" href="../sucursales/index.html">Sucursales</a></li>
             <li><a class="nav__link" href="../contacto/index.html">Contacto</a></li>
-            <li>
-              <a class="btn btn--primary btn--sm header__cta" href="../contacto/index.html">Cotizar</a>
-            </li>
           </ul>
+
+          <div class="nav__mobile">
+            <p class="nav__mobile-label">Contacto directo</p>
+            <a href="tel:+59133475460">Central 347-5460</a>
+            <a href="https://wa.me/59177319046" target="_blank" rel="noopener">WhatsApp 77319046</a>
+            <a href="mailto:info@ubicar.com.bo">info@ubicar.com.bo</a>
+            <a class="btn btn--primary" href="../contacto/index.html">Solicitar cotización</a>
+          </div>
         </nav>
+
+        <div class="header__actions">
+          <a class="btn btn--primary header__cta" href="../contacto/index.html">Cotizar</a>
+        </div>
 
         <button
           class="nav-toggle"
@@ -58,53 +88,107 @@
 
     <main id="contenido">
       <section class="page-hero" aria-labelledby="page-title">
-        <div class="container">
-          <p class="eyebrow">Nosotros</p>
-          <h1 class="page-hero__title" id="page-title">Nuestra empresa</h1>
-          <p class="page-lead">
-            Una Red Internacional de Seguridad que protege vehículos, personas y
-            propiedades en toda Latinoamérica.
-          </p>
+        <div class="container page-hero__grid">
+          <div class="page-hero__content">
+            <p class="eyebrow">Nosotros</p>
+            <h1 class="page-hero__title" id="page-title">Nuestra empresa</h1>
+            <p class="page-lead">
+              Una Red Internacional de Seguridad que protege vehículos, personas y
+              propiedades en toda Latinoamérica.
+            </p>
+            <div class="page-hero__actions">
+              <a class="btn btn--primary" href="../contacto/index.html">Hablar con un asesor</a>
+              <a class="btn btn--ghost-light" href="../servicios/index.html">Ver servicios</a>
+            </div>
+          </div>
+
+          <aside class="page-hero__panel page-hero__panel--facts" aria-label="Ficha corporativa de UBICAR">
+            <p class="page-hero__panel-label">Ficha corporativa</p>
+            <dl class="page-hero__facts">
+              <div>
+                <dt>Desde</dt>
+                <dd>2002</dd>
+              </div>
+              <div>
+                <dt>Experiencia</dt>
+                <dd>24 años</dd>
+              </div>
+              <div>
+                <dt>Sucursales</dt>
+                <dd>4</dd>
+              </div>
+              <div>
+                <dt>Cobertura</dt>
+                <dd>LATAM</dd>
+              </div>
+            </dl>
+            <p class="page-hero__panel-note">Licencia ATT 0064/2011 · Monitoreo 24/7</p>
+          </aside>
         </div>
       </section>
 
       <section class="section">
         <div class="container">
-          <div class="prose reveal">
-            <p>
-              <strong>UBICAR ®</strong> es la única Red Internacional de Seguridad con
-              cobertura en toda Latinoamérica, que provee soluciones y servicios de
-              localización, protección y monitoreo electrónico de vehículos, personas y
-              propiedades.
-            </p>
-            <p>
-              <strong>UBICAR ®</strong> opera en el mercado boliviano desde el año
-              <strong>2002</strong>, atendiendo de manera eficiente a nuestros clientes y
-              usuarios, con una amplia trayectoria en seguridad electrónica.
-            </p>
-            <p>
-              <strong>UBICAR ®</strong> utiliza una amplia gama de dispositivos
-              electrónicos de control, posibilitando satisfacer las necesidades específicas
-              de sus clientes corporativos y particulares.
-            </p>
+          <div class="content-split">
+            <div class="prose reveal">
+              <p>
+                <strong>UBICAR ®</strong> es la única Red Internacional de Seguridad con
+                cobertura en toda Latinoamérica, que provee soluciones y servicios de
+                localización, protección y monitoreo electrónico de vehículos, personas y
+                propiedades.
+              </p>
+              <p>
+                <strong>UBICAR ®</strong> opera en el mercado boliviano desde el año
+                <strong>2002</strong>, atendiendo de manera eficiente a nuestros clientes y
+                usuarios, con una amplia trayectoria en seguridad electrónica.
+              </p>
+              <p>
+                <strong>UBICAR ®</strong> utiliza una amplia gama de dispositivos
+                electrónicos de control, posibilitando satisfacer las necesidades específicas
+                de sus clientes corporativos y particulares.
+              </p>
+            </div>
+
+            <aside class="fact-panel reveal" aria-label="Datos de operación">
+              <p class="fact-panel__label">Operación</p>
+              <h3>Presencia y respaldo</h3>
+              <dl class="fact-panel__list">
+                <div>
+                  <dt>Sede central</dt>
+                  <dd>Santa Cruz</dd>
+                </div>
+                <div>
+                  <dt>Cobertura</dt>
+                  <dd>Bolivia y Latinoamérica</dd>
+                </div>
+                <div>
+                  <dt>Licencia</dt>
+                  <dd>ATT 0064/2011</dd>
+                </div>
+                <div>
+                  <dt>Monitoreo</dt>
+                  <dd>24/7 · 365 días</dd>
+                </div>
+              </dl>
+            </aside>
           </div>
 
-          <div class="stats reveal">
-            <div class="stat-card">
-              <span class="stat-card__value">2002</span>
-              <span class="stat-card__label">Inicio en Bolivia</span>
+          <div class="stats-strip reveal">
+            <div class="stats-strip__item">
+              <strong>2002</strong>
+              <span>Inicio en Bolivia</span>
             </div>
-            <div class="stat-card">
-              <span class="stat-card__value">25+</span>
-              <span class="stat-card__label">Años de experiencia</span>
+            <div class="stats-strip__item">
+              <strong>24</strong>
+              <span>Años de experiencia</span>
             </div>
-            <div class="stat-card">
-              <span class="stat-card__value">4</span>
-              <span class="stat-card__label">Sucursales</span>
+            <div class="stats-strip__item">
+              <strong>4</strong>
+              <span>Sucursales</span>
             </div>
-            <div class="stat-card">
-              <span class="stat-card__value">LATAM</span>
-              <span class="stat-card__label">Cobertura</span>
+            <div class="stats-strip__item">
+              <strong>LATAM</strong>
+              <span>Cobertura</span>
             </div>
           </div>
         </div>
@@ -115,19 +199,56 @@
           <div class="section-head reveal">
             <p class="eyebrow">Nuestro compromiso</p>
             <h2 class="section-title">Seguridad integral, atención personalizada</h2>
-          </div>
-          <div class="prose reveal">
-            <p>
-              Combinamos tecnología GPS/GSM con monitoreo permanente y respuesta física con
-              personal propio. Nuestro equipo acompaña a cada cliente en la instalación, el
-              uso diario del servicio y la atención de cualquier evento.
+            <p class="section-lead">
+              Tecnología, monitoreo permanente y respuesta con personal propio para cada
+              cliente.
             </p>
-            <ul>
-              <li>Monitoreo las 24 horas, los 365 días del año.</li>
-              <li>Provisión de equipos con instalación sin costo.</li>
-              <li>Cámaras de obsequio por pagos adelantados.</li>
-              <li>Descuentos según la modalidad de pago y costo único del servicio.</li>
-            </ul>
+          </div>
+
+          <div class="content-split">
+            <div class="prose reveal">
+              <p>
+                Combinamos tecnología GPS/GSM con monitoreo permanente y respuesta física con
+                personal propio. Nuestro equipo acompaña a cada cliente en la instalación, el
+                uso diario del servicio y la atención de cualquier evento.
+              </p>
+              <p>
+                Nuestra operación está diseñada para responder con rapidez, mantener
+                información clara y acompañar al cliente antes, durante y después de cada
+                evento.
+              </p>
+            </div>
+
+            <aside class="fact-panel reveal" aria-label="Compromisos de servicio">
+              <p class="fact-panel__label">Compromisos</p>
+              <div class="fact-panel__stat">
+                <strong>24/7</strong>
+                <span>Monitoreo permanente</span>
+              </div>
+              <ul class="check-list">
+                <li>Monitoreo las 24 horas, los 365 días del año.</li>
+                <li>Provisión de equipos con instalación sin costo.</li>
+                <li>Cámaras de obsequio por pagos adelantados.</li>
+                <li>Descuentos según la modalidad de pago y costo único del servicio.</li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-cta" aria-labelledby="nosotros-cta-title">
+        <div class="container page-cta__inner">
+          <div>
+            <p class="eyebrow eyebrow--light">Protección con respaldo</p>
+            <h2 id="nosotros-cta-title">Protege lo que te importa.</h2>
+            <p>
+              Conversa con un asesor y descubre la solución de seguridad adecuada para tu
+              vehículo, tu familia o tu empresa.
+            </p>
+          </div>
+          <div class="page-cta__actions">
+            <a class="btn btn--primary" href="../contacto/index.html">Solicitar cotización</a>
+            <a class="btn btn--ghost-light" href="../servicios/index.html">Ver servicios</a>
           </div>
         </div>
       </section>
@@ -138,11 +259,11 @@
         <div class="footer__grid">
           <div class="footer__brand">
             <a class="brand" href="../../index.html" aria-label="UBICAR, inicio">
-              <span class="brand__pill"><img class="brand__logo" src="../../img/logo-ubicar1.png" alt="UBICAR" width="90" height="40" /></span>
+              <img class="brand__logo" src="../../img/logo-ubicar-light.png" alt="UBICAR" width="86" height="38" />
             </a>
             <p>
-              Red Internacional de Seguridad con cobertura en toda Latinoamérica. Rastreo,
-              monitoreo y protección desde 2002.
+              Red Internacional de Seguridad con cobertura en Latinoamérica. Rastreo,
+              monitoreo y respuesta desde 2002.
             </p>
           </div>
 
@@ -161,20 +282,21 @@
           <div>
             <p class="footer__col-title">Sucursales</p>
             <nav class="footer__nav" aria-label="Sucursales">
-              <a href="../sucursales/index.html">Santa Cruz (central)</a>
+              <a href="../sucursales/index.html">Santa Cruz · Central</a>
               <a href="../sucursales/index.html">Cochabamba</a>
               <a href="../sucursales/index.html">La Paz</a>
-              <a href="../sucursales/index.html">Tarija</a>
+              <a href="../sucursales/index.html">Tarija · Dealer</a>
             </nav>
           </div>
 
           <div>
             <p class="footer__col-title">Contacto</p>
-            <nav class="footer__nav" aria-label="Datos de contacto">
+            <div class="footer__contact">
+              <a href="tel:+59133475460">Tel/Fax <strong>347-5460</strong></a>
+              <a href="https://wa.me/59177319046" target="_blank" rel="noopener">WhatsApp <strong>77319046</strong></a>
               <a href="mailto:info@ubicar.com.bo">info@ubicar.com.bo</a>
-              <a href="tel:+59133475460">Tel/Fax 347-5460</a>
               <a href="../contacto/index.html">Formulario de contacto</a>
-            </nav>
+            </div>
           </div>
         </div>
 

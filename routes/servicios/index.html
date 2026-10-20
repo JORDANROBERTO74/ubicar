@@ -3,18 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#0b0b0d" />
+    <meta name="theme-color" content="#0a0a0b" />
     <meta
       name="description"
-      content="Servicios de UBICAR ®: rastreo satelital, seguimiento logístico UBITRACK, monitoreo de propiedades y marcado de bienes, con monitoreo 24/7."
+      content="Servicios de UBICAR ®: rastreo satelital, seguimiento logístico UBITRACK, monitoreo de propiedades, respuesta física y marcado de bienes, con monitoreo 24/7."
     />
     <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="../../favicon.ico" sizes="any" />
     <title>Servicios — UBICAR ®</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../../styles.css" />
@@ -24,9 +25,29 @@
     <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
     <header class="site-header" id="site-header">
+      <div class="utility-bar">
+        <div class="container utility-bar__inner">
+          <p class="utility-bar__tag">Red Internacional de Seguridad · Desde 2002</p>
+          <div class="utility-bar__contact">
+            <a href="tel:+59133475460">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2z"/></svg>
+              Central 347-5460
+            </a>
+            <a href="https://wa.me/59177319046" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.1-5.5A8.5 8.5 0 1 1 21 11.5z"/><path d="M8.5 8.8c.4 2.7 2.2 4.5 4.9 4.9"/></svg>
+              WhatsApp 77319046
+            </a>
+            <a href="mailto:info@ubicar.com.bo">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              info@ubicar.com.bo
+            </a>
+          </div>
+        </div>
+      </div>
+
       <div class="container header__inner">
         <a class="brand" href="../../index.html" aria-label="UBICAR, inicio">
-          <img class="brand__logo" src="../../img/logo-ubicar1.png" alt="UBICAR" width="80" height="34" />
+          <img class="brand__logo" src="../../img/logo-ubicar.png" alt="UBICAR" width="88" height="39" />
         </a>
 
         <nav class="nav" id="primary-nav" aria-label="Navegación principal">
@@ -37,11 +58,20 @@
             <li><a class="nav__link" href="../productos/index.html">Productos</a></li>
             <li><a class="nav__link" href="../sucursales/index.html">Sucursales</a></li>
             <li><a class="nav__link" href="../contacto/index.html">Contacto</a></li>
-            <li>
-              <a class="btn btn--primary btn--sm header__cta" href="../contacto/index.html">Cotizar</a>
-            </li>
           </ul>
+
+          <div class="nav__mobile">
+            <p class="nav__mobile-label">Contacto directo</p>
+            <a href="tel:+59133475460">Central 347-5460</a>
+            <a href="https://wa.me/59177319046" target="_blank" rel="noopener">WhatsApp 77319046</a>
+            <a href="mailto:info@ubicar.com.bo">info@ubicar.com.bo</a>
+            <a class="btn btn--primary" href="../contacto/index.html">Solicitar cotización</a>
+          </div>
         </nav>
+
+        <div class="header__actions">
+          <a class="btn btn--primary header__cta" href="../contacto/index.html">Cotizar</a>
+        </div>
 
         <button
           class="nav-toggle"
@@ -58,88 +88,234 @@
 
     <main id="contenido">
       <section class="page-hero" aria-labelledby="page-title">
-        <div class="container">
-          <p class="eyebrow">Servicios</p>
-          <h1 class="page-hero__title" id="page-title">Seguridad integral</h1>
-          <p class="page-lead">
-            UBICAR ® es una empresa líder en seguridad que opera en varios países del mundo
-            y cuenta con los siguientes servicios.
-          </p>
+        <div class="container page-hero__grid">
+          <div class="page-hero__content">
+            <p class="eyebrow">Servicios</p>
+            <h1 class="page-hero__title" id="page-title">Seguridad integral</h1>
+            <p class="page-lead">
+              UBICAR ® es una empresa líder en seguridad que opera en varios países del mundo
+              y cuenta con los siguientes servicios.
+            </p>
+            <div class="page-hero__actions">
+              <a class="btn btn--primary" href="../contacto/index.html">Solicitar cotización</a>
+              <a class="btn btn--ghost-light" href="#facilidades">Ver facilidades</a>
+            </div>
+          </div>
+
+          <aside class="page-hero__panel" aria-label="Índice de servicios">
+            <p class="page-hero__panel-label">Servicios UBICAR</p>
+            <ul class="page-hero__index">
+              <li><a href="#rastreo"><span>01</span> <strong>Rastreo satelital</strong></a></li>
+              <li><a href="#ubitrack"><span>02</span> <strong>Seguimiento logístico</strong></a></li>
+              <li><a href="#monitoreo"><span>03</span> <strong>Monitoreo de propiedades</strong></a></li>
+              <li><a href="#respuesta"><span>04</span> <strong>Respuesta física</strong></a></li>
+              <li><a href="#marcado"><span>05</span> <strong>Marcado de bienes</strong></a></li>
+            </ul>
+          </aside>
         </div>
       </section>
 
-      <section class="section">
+      <section class="section" aria-labelledby="servicios-title">
         <div class="container">
-          <div class="services__grid">
-            <article class="service reveal">
-              <div class="service__media">
-                <img src="../../img/servicio-rastreo.webp" alt="Rastreo satelital de vehículos" loading="lazy" />
+          <div class="section-head reveal">
+            <p class="eyebrow">Qué protegemos</p>
+            <h2 class="section-title" id="servicios-title">Protección para cada frente.</h2>
+            <p class="section-lead">
+              Soluciones de localización, monitoreo y respuesta coordinadas desde nuestra
+              central, con personal propio y cobertura internacional.
+            </p>
+          </div>
+
+          <div class="service-grid">
+            <article class="service-card reveal" id="rastreo">
+              <div class="service-card__media">
+                <img
+                  src="../../img/servicio-rastreo-satelital-720.webp"
+                  srcset="../../img/servicio-rastreo-satelital-360.webp 360w, ../../img/servicio-rastreo-satelital-720.webp 720w"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1023px) 50vw, 300px"
+                  alt="Rastreo satelital de vehículos"
+                  width="720"
+                  height="405"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="service-card__tag">Vehículos</span>
               </div>
-              <h3 class="service__title">Rastreo Satelital</h3>
-              <p class="service__text">
-                Es la recuperación pacífica de su vehículo en caso de robo. Localización
-                permanente y acompañamiento del equipo de UBICAR ® durante todo el proceso.
-              </p>
+              <div class="service-card__body">
+                <h3 class="service-card__title">Rastreo satelital</h3>
+                <p class="service-card__text">
+                  Recuperación pacífica de tu vehículo en caso de robo, con localización
+                  permanente y acompañamiento durante todo el proceso.
+                </p>
+                <a class="service-card__link" href="../contacto/index.html">
+                  Solicitar información
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </a>
+              </div>
             </article>
 
-            <article class="service reveal">
-              <div class="service__media">
-                <img src="../../img/servicio-logistico.webp" alt="Seguimiento logístico UBITRACK" loading="lazy" />
+            <article class="service-card reveal" id="ubitrack">
+              <div class="service-card__media">
+                <img
+                  src="../../img/servicio-logistica-flotas-720.webp"
+                  srcset="../../img/servicio-logistica-flotas-360.webp 360w, ../../img/servicio-logistica-flotas-720.webp 720w"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1023px) 50vw, 300px"
+                  alt="Seguimiento logístico de flotas con UBITRACK"
+                  width="720"
+                  height="405"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="service-card__tag">Flotas</span>
               </div>
-              <h3 class="service__title">Seguimiento Logístico (UBITRACK)</h3>
-              <p class="service__text">
-                Es un sistema de localización que combina las tecnologías GSM y GPS con
-                Internet, permitiendo de forma sencilla y ágil el monitoreo y localización de
-                vehículos, bienes y personas, en cualquier lugar del mundo durante las 24
-                horas del día, los 365 días del año.
-              </p>
+              <div class="service-card__body">
+                <h3 class="service-card__title">Seguimiento logístico</h3>
+                <p class="service-card__text">
+                  UBITRACK combina GSM, GPS e Internet para monitorear vehículos, bienes y
+                  personas en cualquier lugar, las 24 horas del día.
+                </p>
+                <a class="service-card__link" href="../contacto/index.html">
+                  Solicitar información
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </a>
+              </div>
             </article>
 
-            <article class="service reveal">
-              <div class="service__media">
-                <img src="../../img/servicio-monitoreo.webp" alt="Monitoreo de propiedades" loading="lazy" />
+            <article class="service-card reveal" id="monitoreo">
+              <div class="service-card__media">
+                <img
+                  src="../../img/servicio-monitoreo-propiedades-720.webp"
+                  srcset="../../img/servicio-monitoreo-propiedades-360.webp 360w, ../../img/servicio-monitoreo-propiedades-720.webp 720w"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1023px) 50vw, 300px"
+                  alt="Monitoreo de propiedades y alarmas"
+                  width="720"
+                  height="405"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="service-card__tag">Inmuebles</span>
               </div>
-              <h3 class="service__title">Monitoreo de Propiedades</h3>
-              <p class="service__text">
-                Dentro de la seguridad integral de bienes muebles e inmuebles, UBICAR ® ha
-                desarrollado el monitoreo de alarmas para domicilios, comercios e industrias:
-                vigilancia electrónica las 24 horas, con aviso y respuesta física inmediata
-                ante el ingreso de extraños, con personal propio para resguardar, acompañar o
-                repeler al intruso.
-              </p>
+              <div class="service-card__body">
+                <h3 class="service-card__title">Monitoreo de propiedades</h3>
+                <p class="service-card__text">
+                  Vigilancia electrónica 24/7 para domicilios, comercios e industrias, con
+                  aviso y respuesta física ante el ingreso de extraños.
+                </p>
+                <a class="service-card__link" href="../contacto/index.html">
+                  Solicitar información
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </a>
+              </div>
             </article>
 
-            <article class="service reveal">
-              <div class="service__media">
-                <img src="../../img/marcado.webp" alt="Marcado e identificación de bienes" loading="lazy" />
+            <article class="service-card reveal" id="respuesta">
+              <div class="service-card__media">
+                <img
+                  src="../../img/servicio-respuesta-fisica-720.webp"
+                  srcset="../../img/servicio-respuesta-fisica-360.webp 360w, ../../img/servicio-respuesta-fisica-720.webp 720w"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1023px) 50vw, 300px"
+                  alt="Respuesta física con personal propio de UBICAR"
+                  width="720"
+                  height="405"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="service-card__tag">Operaciones</span>
               </div>
-              <h3 class="service__title">Marcado de Bienes</h3>
-              <p class="service__text">
-                Registre e identifique sus bienes: marcamos todo tipo de productos y los
-                registramos en nuestra base de datos UBICAR ®. El marcado es un elemento
-                disuasivo frente al robo.
-              </p>
+              <div class="service-card__body">
+                <h3 class="service-card__title">Respuesta física</h3>
+                <p class="service-card__text">
+                  Personal propio para resguardar, acompañar o repeler intrusiones, coordinado
+                  en todo momento con la central de monitoreo.
+                </p>
+                <a class="service-card__link" href="../contacto/index.html">
+                  Solicitar información
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </a>
+              </div>
             </article>
           </div>
+
+          <article class="service-complement reveal" id="marcado">
+            <div>
+              <p class="eyebrow">Servicio complementario</p>
+              <h3>Marcado de bienes</h3>
+              <p>
+                Marcamos y registramos todo tipo de productos en nuestra base de datos. El
+                marcado es un elemento disuasivo frente al robo y facilita la identificación
+                de tus bienes.
+              </p>
+            </div>
+            <a class="btn btn--outline" href="../contacto/index.html">Solicitar información</a>
+          </article>
         </div>
       </section>
 
-      <section class="section section--paper">
+      <section class="section section--paper" id="facilidades" aria-labelledby="facilidades-title">
         <div class="container">
           <div class="section-head reveal">
             <p class="eyebrow">Facilidades</p>
-            <h2 class="section-title">Pensado para que empieces a protegerte hoy</h2>
+            <h2 class="section-title" id="facilidades-title">Pensado para que empieces a protegerte hoy</h2>
+            <p class="section-lead">
+              Equipos, instalación y acompañamiento incluidos para que la protección empiece
+              sin complicaciones.
+            </p>
           </div>
-          <div class="prose reveal">
-            <ul>
-              <li>La provisión de equipos con instalación sin costo.</li>
-              <li>Cámaras de obsequio por pagos adelantados.</li>
-              <li>Descuentos en el servicio de acuerdo a la modalidad de pago.</li>
-              <li>Costo único del servicio, sin considerar la cantidad de equipos.</li>
-            </ul>
+
+          <div class="adv__grid adv__grid--4 reveal">
+            <div class="adv">
+              <span class="adv__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14.7 6.3a4 4 0 0 0-5 5L4 17l3 3 5.7-5.7a4 4 0 0 0 5-5l-2.4 2.4-3-3z"/></svg>
+              </span>
+              <div>
+                <h3 class="adv__title">Instalación sin costo</h3>
+                <p class="adv__text">Provisión de equipos con instalación incluida.</p>
+              </div>
+            </div>
+            <div class="adv">
+              <span class="adv__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>
+              </span>
+              <div>
+                <h3 class="adv__title">Cámaras de obsequio</h3>
+                <p class="adv__text">Beneficio por pagos adelantados del servicio.</p>
+              </div>
+            </div>
+            <div class="adv">
+              <span class="adv__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 12 12 4H4v8l8 8 8-8z"/><circle cx="8" cy="8" r="1.2"/></svg>
+              </span>
+              <div>
+                <h3 class="adv__title">Descuentos por pago</h3>
+                <p class="adv__text">Condiciones según la modalidad de pago elegida.</p>
+              </div>
+            </div>
+            <div class="adv">
+              <span class="adv__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m12 3 7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="m9 12 2 2 4-4"/></svg>
+              </span>
+              <div>
+                <h3 class="adv__title">Costo único</h3>
+                <p class="adv__text">Un solo costo por el servicio, sin importar los equipos.</p>
+              </div>
+            </div>
           </div>
-          <div class="actions">
+        </div>
+      </section>
+
+      <section class="page-cta" aria-labelledby="servicios-cta-title">
+        <div class="container page-cta__inner">
+          <div>
+            <p class="eyebrow eyebrow--light">Asesoría sin compromiso</p>
+            <h2 id="servicios-cta-title">Diseñemos la protección adecuada para ti.</h2>
+            <p>
+              Cuéntanos qué necesitas proteger y te ayudamos a elegir el servicio y la
+              modalidad que mejor se adapten a tu operación.
+            </p>
+          </div>
+          <div class="page-cta__actions">
             <a class="btn btn--primary" href="../contacto/index.html">Solicitar cotización</a>
+            <a class="btn btn--ghost-light" href="../productos/index.html">Ver productos</a>
           </div>
         </div>
       </section>
@@ -150,11 +326,11 @@
         <div class="footer__grid">
           <div class="footer__brand">
             <a class="brand" href="../../index.html" aria-label="UBICAR, inicio">
-              <span class="brand__pill"><img class="brand__logo" src="../../img/logo-ubicar1.png" alt="UBICAR" width="90" height="40" /></span>
+              <img class="brand__logo" src="../../img/logo-ubicar-light.png" alt="UBICAR" width="86" height="38" />
             </a>
             <p>
-              Red Internacional de Seguridad con cobertura en toda Latinoamérica. Rastreo,
-              monitoreo y protección desde 2002.
+              Red Internacional de Seguridad con cobertura en Latinoamérica. Rastreo,
+              monitoreo y respuesta desde 2002.
             </p>
           </div>
 
@@ -173,20 +349,21 @@
           <div>
             <p class="footer__col-title">Sucursales</p>
             <nav class="footer__nav" aria-label="Sucursales">
-              <a href="../sucursales/index.html">Santa Cruz (central)</a>
+              <a href="../sucursales/index.html">Santa Cruz · Central</a>
               <a href="../sucursales/index.html">Cochabamba</a>
               <a href="../sucursales/index.html">La Paz</a>
-              <a href="../sucursales/index.html">Tarija</a>
+              <a href="../sucursales/index.html">Tarija · Dealer</a>
             </nav>
           </div>
 
           <div>
             <p class="footer__col-title">Contacto</p>
-            <nav class="footer__nav" aria-label="Datos de contacto">
+            <div class="footer__contact">
+              <a href="tel:+59133475460">Tel/Fax <strong>347-5460</strong></a>
+              <a href="https://wa.me/59177319046" target="_blank" rel="noopener">WhatsApp <strong>77319046</strong></a>
               <a href="mailto:info@ubicar.com.bo">info@ubicar.com.bo</a>
-              <a href="tel:+59133475460">Tel/Fax 347-5460</a>
               <a href="../contacto/index.html">Formulario de contacto</a>
-            </nav>
+            </div>
           </div>
         </div>
 
