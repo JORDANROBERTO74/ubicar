@@ -3,18 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#0b0b0d" />
+    <meta name="theme-color" content="#0a0a0b" />
     <meta
       name="description"
       content="Asegurado de partes y piezas de vehículos de UBICAR ®: protección manual contra el robo de las piezas más vulnerables."
     />
     <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="../../favicon.ico" sizes="any" />
     <title>Productos — UBICAR ®</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../../styles.css" />
@@ -24,9 +25,29 @@
     <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
     <header class="site-header" id="site-header">
+      <div class="utility-bar">
+        <div class="container utility-bar__inner">
+          <p class="utility-bar__tag">Red Internacional de Seguridad · Desde 2002</p>
+          <div class="utility-bar__contact">
+            <a href="tel:+59133475460">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2z"/></svg>
+              Central 347-5460
+            </a>
+            <a href="https://wa.me/59177319046" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.1-5.5A8.5 8.5 0 1 1 21 11.5z"/><path d="M8.5 8.8c.4 2.7 2.2 4.5 4.9 4.9"/></svg>
+              WhatsApp 77319046
+            </a>
+            <a href="mailto:info@ubicar.com.bo">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              info@ubicar.com.bo
+            </a>
+          </div>
+        </div>
+      </div>
+
       <div class="container header__inner">
         <a class="brand" href="../../index.html" aria-label="UBICAR, inicio">
-          <img class="brand__logo" src="../../img/logo-ubicar1.png" alt="UBICAR" width="80" height="34" />
+          <img class="brand__logo" src="../../img/logo-ubicar.png" alt="UBICAR" width="88" height="39" />
         </a>
 
         <nav class="nav" id="primary-nav" aria-label="Navegación principal">
@@ -37,11 +58,20 @@
             <li><a class="nav__link" href="../productos/index.html" aria-current="page">Productos</a></li>
             <li><a class="nav__link" href="../sucursales/index.html">Sucursales</a></li>
             <li><a class="nav__link" href="../contacto/index.html">Contacto</a></li>
-            <li>
-              <a class="btn btn--primary btn--sm header__cta" href="../contacto/index.html">Cotizar</a>
-            </li>
           </ul>
+
+          <div class="nav__mobile">
+            <p class="nav__mobile-label">Contacto directo</p>
+            <a href="tel:+59133475460">Central 347-5460</a>
+            <a href="https://wa.me/59177319046" target="_blank" rel="noopener">WhatsApp 77319046</a>
+            <a href="mailto:info@ubicar.com.bo">info@ubicar.com.bo</a>
+            <a class="btn btn--primary" href="../contacto/index.html">Solicitar cotización</a>
+          </div>
         </nav>
+
+        <div class="header__actions">
+          <a class="btn btn--primary header__cta" href="../contacto/index.html">Cotizar</a>
+        </div>
 
         <button
           class="nav-toggle"
@@ -58,44 +88,110 @@
 
     <main id="contenido">
       <section class="page-hero" aria-labelledby="page-title">
-        <div class="container">
-          <p class="eyebrow">Productos</p>
-          <h1 class="page-hero__title" id="page-title">Asegurado de partes y piezas</h1>
-          <p class="page-lead">
-            Protección adicional para las piezas más vulnerables de tu vehículo.
-          </p>
+        <div class="container page-hero__grid">
+          <div class="page-hero__content">
+            <p class="eyebrow">Productos</p>
+            <h1 class="page-hero__title" id="page-title">Asegurado de partes y piezas</h1>
+            <p class="page-lead">
+              Protección adicional para las piezas más vulnerables de tu vehículo, como
+              complemento del servicio de rastreo satelital.
+            </p>
+            <div class="page-hero__actions">
+              <a class="btn btn--primary" href="../contacto/index.html">Solicitar este servicio</a>
+              <a class="btn btn--ghost-light" href="../servicios/index.html">Volver a servicios</a>
+            </div>
+          </div>
+
+          <figure class="page-hero__panel page-hero__panel--media">
+            <img
+              src="../../img/productos-partes-piezas-1200.webp"
+              srcset="../../img/productos-partes-piezas-600.webp 600w, ../../img/productos-partes-piezas-1200.webp 1200w"
+              sizes="(max-width: 640px) 100vw, 480px"
+              alt="Vehículos protegidos con el asegurado de partes y piezas de UBICAR"
+              width="1200"
+              height="675"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Protección complementaria para tu vehículo</figcaption>
+          </figure>
         </div>
       </section>
 
-      <section class="section">
+      <section class="section" aria-labelledby="producto-intro-title">
         <div class="container">
-          <div class="prose reveal">
-            <p>
-              Consiste en asegurar las partes y piezas del vehículo de forma manual, para
-              evitar el robo de las mismas. Es un complemento del servicio de rastreo
-              satelital que refuerza la seguridad física de tu vehículo.
+          <div class="content-split">
+            <div class="prose reveal">
+              <p>
+                Consiste en asegurar las partes y piezas del vehículo de forma manual, para
+                evitar el robo de las mismas. Es un complemento del servicio de rastreo
+                satelital que refuerza la seguridad física de tu vehículo.
+              </p>
+              <p>
+                Nuestro equipo realiza la instalación en cualquiera de nuestras sucursales,
+                dejando cada pieza asegurada y verificada. Con este servicio, reducirás el
+                riesgo de pérdida y el costo de reposición de componentes.
+              </p>
+            </div>
+
+            <aside class="fact-panel reveal" aria-label="Beneficios del asegurado de partes y piezas">
+              <p class="fact-panel__label">Complemento del rastreo</p>
+              <h3>Protección física adicional</h3>
+              <ul class="check-list">
+                <li>Asegurado manual de las piezas más vulnerables.</li>
+                <li>Instalación y verificación en sucursales UBICAR.</li>
+                <li>Reduce el riesgo de pérdida y el costo de reposición.</li>
+              </ul>
+            </aside>
+          </div>
+
+          <div class="section-head section-head--spaced reveal">
+            <p class="eyebrow">Cómo funciona</p>
+            <h2 class="section-title" id="producto-intro-title">Instalación simple, respaldo verificable.</h2>
+            <p class="section-lead">
+              Cada pieza se asegura de forma individual y se verifica antes de entregar el
+              vehículo.
             </p>
-            <p>
-              Nuestro equipo realiza la instalación en cualquiera de nuestras sucursales,
-              dejando cada pieza asegurada y verificada. Con este servicio, reducirás el
-              riesgo de pérdida y el costo de reposición de componentes.
-            </p>
+          </div>
+
+          <div class="adv__grid reveal">
+            <div class="adv">
+              <span class="adv__icon" aria-hidden="true">01</span>
+              <div>
+                <h3 class="adv__title">Diagnóstico</h3>
+                <p class="adv__text">Revisamos el vehículo y definimos las piezas a asegurar.</p>
+              </div>
+            </div>
+            <div class="adv">
+              <span class="adv__icon" aria-hidden="true">02</span>
+              <div>
+                <h3 class="adv__title">Instalación</h3>
+                <p class="adv__text">Aseguramos cada pieza de forma manual en sucursal.</p>
+              </div>
+            </div>
+            <div class="adv">
+              <span class="adv__icon" aria-hidden="true">03</span>
+              <div>
+                <h3 class="adv__title">Verificación</h3>
+                <p class="adv__text">Revisamos el trabajo y dejamos el respaldo correspondiente.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section section--paper">
+      <section class="section section--paper" aria-labelledby="piezas-title">
         <div class="container">
           <div class="section-head reveal">
             <p class="eyebrow">Piezas incluidas</p>
-            <h2 class="section-title">Se aseguran las partes y piezas siguientes</h2>
+            <h2 class="section-title" id="piezas-title">Se aseguran las partes y piezas siguientes</h2>
             <p class="section-lead">
               Cada pieza es asegurada de forma manual e individual, con verificación del
               trabajo realizado.
             </p>
           </div>
 
-          <ul class="pieces__grid reveal">
+          <ul class="parts-grid reveal">
             <li>Módulo electrónico (cerebro)</li>
             <li>Sistema de flujo de aire</li>
             <li>Caja de fusibles</li>
@@ -118,9 +214,22 @@
             <li>Asegurado de airbag</li>
             <li>Asegurado de techo solar</li>
           </ul>
+        </div>
+      </section>
 
-          <div class="actions">
+      <section class="page-cta" aria-labelledby="productos-cta-title">
+        <div class="container page-cta__inner">
+          <div>
+            <p class="eyebrow eyebrow--light">Protección complementaria</p>
+            <h2 id="productos-cta-title">Refuerza la seguridad de tu vehículo.</h2>
+            <p>
+              Suma el asegurado de partes y piezas al rastreo satelital y reduce los riesgos
+              de pérdida de componentes.
+            </p>
+          </div>
+          <div class="page-cta__actions">
             <a class="btn btn--primary" href="../contacto/index.html">Solicitar este servicio</a>
+            <a class="btn btn--ghost-light" href="../servicios/index.html">Ver servicios</a>
           </div>
         </div>
       </section>
@@ -131,11 +240,11 @@
         <div class="footer__grid">
           <div class="footer__brand">
             <a class="brand" href="../../index.html" aria-label="UBICAR, inicio">
-              <span class="brand__pill"><img class="brand__logo" src="../../img/logo-ubicar1.png" alt="UBICAR" width="90" height="40" /></span>
+              <img class="brand__logo" src="../../img/logo-ubicar-light.png" alt="UBICAR" width="86" height="38" />
             </a>
             <p>
-              Red Internacional de Seguridad con cobertura en toda Latinoamérica. Rastreo,
-              monitoreo y protección desde 2002.
+              Red Internacional de Seguridad con cobertura en Latinoamérica. Rastreo,
+              monitoreo y respuesta desde 2002.
             </p>
           </div>
 
@@ -154,20 +263,21 @@
           <div>
             <p class="footer__col-title">Sucursales</p>
             <nav class="footer__nav" aria-label="Sucursales">
-              <a href="../sucursales/index.html">Santa Cruz (central)</a>
+              <a href="../sucursales/index.html">Santa Cruz · Central</a>
               <a href="../sucursales/index.html">Cochabamba</a>
               <a href="../sucursales/index.html">La Paz</a>
-              <a href="../sucursales/index.html">Tarija</a>
+              <a href="../sucursales/index.html">Tarija · Dealer</a>
             </nav>
           </div>
 
           <div>
             <p class="footer__col-title">Contacto</p>
-            <nav class="footer__nav" aria-label="Datos de contacto">
+            <div class="footer__contact">
+              <a href="tel:+59133475460">Tel/Fax <strong>347-5460</strong></a>
+              <a href="https://wa.me/59177319046" target="_blank" rel="noopener">WhatsApp <strong>77319046</strong></a>
               <a href="mailto:info@ubicar.com.bo">info@ubicar.com.bo</a>
-              <a href="tel:+59133475460">Tel/Fax 347-5460</a>
               <a href="../contacto/index.html">Formulario de contacto</a>
-            </nav>
+            </div>
           </div>
         </div>
 
