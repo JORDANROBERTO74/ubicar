@@ -26,9 +26,6 @@ routes/
   sucursales/index.html
   contacto/index.html
 img/
-  originals/               # Originales de las fotos seleccionadas
-  legacy/                  # Material descartado, conservado como referencia
-  future/                  # Material reservado para una fase posterior
 ```
 
 ## Páginas internas
@@ -53,7 +50,7 @@ El sitio usa fotografías optimizadas en WebP, con variantes para 1x/2x:
 - `plataforma-rastreo-vehiculo.webp` (sección Plataforma, junto a una vista de la central)
 - `productos-partes-piezas-1200.webp` / `-600.webp` (hero de Productos)
 
-Los originales están en `img/originals/`. Las imágenes con texto generado ilegible, interfaces inventadas o mapas de baja resolución se movieron a `img/legacy/` y no se publican.
+Las imágenes se sirven directamente desde `img/` en versiones optimizadas.
 
 ## Formularios
 
